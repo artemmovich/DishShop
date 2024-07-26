@@ -1,0 +1,18 @@
+.button {
+   text-transform: uppercase;
+   background-color: yellow;
+   border: none;
+   color: black;
+   padding: 21px 75px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   
+   cursor: pointer;
+   border-radius: 4px;
+ 
+   &:hover {
+     background-color: darkorange;
+   }
+}

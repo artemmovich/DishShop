@@ -1,0 +1,71 @@
+
+.header {
+
+   
+  
+   align-items: center;
+   padding: 10px 20px;
+  
+   
+   &__top-part {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+    
+   }
+   &__lang--active {
+      font-weight: bold;
+   }         
+   &__lang-switcher {
+      display: flex;
+      align-items: center;
+      gap: 17px;
+      color: #000;
+
+      &__lang {
+         margin-right: 10px;
+         text-decoration: none;
+         color: #333;
+
+        
+      }
+   }
+
+   &__logo {
+      font-size: 24px;
+      font-weight: bold;
+   }
+
+   &__nav {
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      justify-content: space-evenly;
+      font-size: 24px;
+
+      &-link {
+         margin: 0 10px;
+         text-decoration: none;
+         color: #333;
+
+         &:hover {
+            text-decoration: underline;
+         }
+      }
+   }
+
+
+   &__icons {
+    display: flex;
+    gap: 36px;
+
+      &__icon {
+        
+
+         
+         
+      }
+   }
+}
+

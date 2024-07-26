@@ -1,0 +1,13 @@
+.shop {
+   padding-top: 50px;
+   padding-bottom: 50px;
+   &__wrapper {
+      display: flex;
+      flex-direction: row;
+      gap: 32px;
+      flex-wrap: wrap;
+      overflow: hidden;
+      max-width: 1159px;
+      margin: 0 auto;
+   }
+}
