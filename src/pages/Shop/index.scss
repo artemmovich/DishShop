@@ -3,11 +3,24 @@
    padding-bottom: 50px;
    &__wrapper {
       display: flex;
-      flex-direction: row;
+      
       gap: 32px;
       flex-wrap: wrap;
       overflow: hidden;
       max-width: 1159px;
       margin: 0 auto;
+      padding-left: 15px;
+
+      .shop-item {
+         flex: 1 0 calc(33.333% - 32px); 
+         max-width: calc(33.333% - 32px);
+      }
+
+      @media (max-width: 800px) {
+         .shop-item {
+                        flex: 1 0 calc(50% - 32px); 
+            max-width: calc(50% - 32px);
+         }
+      }
    }
 }

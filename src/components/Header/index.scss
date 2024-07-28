@@ -1,71 +1,124 @@
-
 .header {
+  align-items: center;
+  padding: 10px 20px;
 
-   
+  &__top-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  &__lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    color: #000;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__lang--active {
+    font-weight: bold;
+  }
+
+  &__logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  &__nav {
   
-   align-items: center;
-   padding: 10px 20px;
-  
-   
-   &__top-part {
+
+    @media (max-width: 768px) {
+      
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-bottom: 20px;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      z-index: 999;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &--open {
+      @media (max-width: 768px) {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 24px;
     
-   }
-   &__lang--active {
-      font-weight: bold;
-   }         
-   &__lang-switcher {
-      display: flex;
+    list-style: none;
+   
+
+    @media (max-width: 768px) {
+      padding-top: 100px;
+      flex-direction: column;
       align-items: center;
-      gap: 17px;
-      color: #000;
+      justify-content: start;
+      
+      height: 100%;
+      width: 100%;
+    }
+    @media (max-width: 880px) {
+      font-size: 18px;
+    }
+  }
 
-      &__lang {
-         margin-right: 10px;
-         text-decoration: none;
-         color: #333;
+  &__nav-link {
+    margin: 0 15px;
 
-        
+    @media (max-width: 768px) {
+      margin: 20px 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #333;
+
+      &:hover {
+        text-decoration: underline;
       }
-   }
+    }
+  }
 
-   &__logo {
-      font-size: 24px;
-      font-weight: bold;
-   }
+  &__burger {
+    position: relative;
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
 
-   &__nav {
+    &-line {
+      width: 25px;
+      height: 3px;
+      background: #333;
+      margin: 3px 0;
+    }
+
+    @media (max-width: 768px) {
       display: flex;
-      cursor: pointer;
-      align-items: center;
-      justify-content: space-evenly;
-      font-size: 24px;
+    }
+  }
 
-      &-link {
-         margin: 0 10px;
-         text-decoration: none;
-         color: #333;
-
-         &:hover {
-            text-decoration: underline;
-         }
-      }
-   }
-
-
-   &__icons {
+  &__icons {
+    position: relative;
+    z-index: 1000;
     display: flex;
     gap: 36px;
-
-      &__icon {
-        
-
-         
-         
-      }
-   }
+  }
 }
-

@@ -1,8 +1,10 @@
-import "./index.scss"
-import cartItem from "../../assets/img/cartItem.svg"
+import React from 'react';
+import "./index.scss";
+import cartItem from "../../assets/img/cartItem.svg";
 import { useDispatch } from 'react-redux';
 import { addItem } from '../../store/reducers/cartSlice';
 import { toast } from 'react-toastify';
+
 export const ShopItem = ({ id, src, title, price, info }) => {
    const dispatch = useDispatch();
 
@@ -11,6 +13,7 @@ export const ShopItem = ({ id, src, title, price, info }) => {
       dispatch(addItem({ id, src, title, price, info }));
       toast.success('Товар додано до кошика!', {
          
+         autoClose: 1500,
       });
    };
 
@@ -24,7 +27,7 @@ export const ShopItem = ({ id, src, title, price, info }) => {
             </div>
             <div className="shop-item__about">
                <p className="shop-item__price">{price}</p>
-               <button onClick={handleAddToCart} className="shop-item__link" href="#" >
+               <button onClick={handleAddToCart} className="shop-item__link">
                   <img className="shop-item__cart" src={cartItem} alt="Add to Cart" />
                </button>
             </div>
