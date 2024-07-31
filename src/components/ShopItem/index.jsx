@@ -12,7 +12,6 @@ export const ShopItem = ({ id, src, title, price, info }) => {
       e.preventDefault(); 
       dispatch(addItem({ id, src, title, price, info }));
       toast.success('Товар додано до кошика!', {
-         
          autoClose: 1500,
       });
    };

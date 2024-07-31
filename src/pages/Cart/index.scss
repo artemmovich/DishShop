@@ -6,6 +6,12 @@
    min-height: 100vh;
    &__empty {
       text-align: center;
+      img {
+         @media (max-width: 768px) {
+            width: 50%;
+            margin: 0 auto;
+         }
+      }
    }
    &__clear {
       padding: 5px 20px;
@@ -30,43 +36,70 @@
 
    &__item {
       display: flex;
-
+justify-content: space-around;
       align-items: center;
       padding: 15px;
       background-color: #fff;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
-    
-   &__item-details {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
+      img {
+         width: 80px;
+         height: 80px;
+         object-fit: cover;
+         border-radius: 8px;
+         margin-right: 20px;
+      }
+      &-remove {
+         padding: 5px 20px;
+         margin-left: 50px;
+      }
+      &-quantity {
+         border: 1px solid;
+         border-radius: 4px;
+         display: flex;
+         align-items: center;
+        margin-left: 20px;
+         
+         button {
+            background-color: #f0f0f0;
+            border: none;
+            border-radius: 4px;
+            padding: 5px 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
 
-      p {
-         margin: 0;
-         font-size: 16px;
-         color: #555;
+            &:hover {
+               background-color: #e0e0e0;
+            }
+
+            &:active {
+               background-color: #d0d0d0;
+            }
+         }
+
+         span {
+            margin: 0 10px;
+            font-size: 16px;
+         }
       }
 
-      h4 {
-         margin: 0;
-         font-size: 18px;
-         color: #333;
-      }
-   } 
-   }
-   .cart__item-remove {
-      padding: 5px 20px;
-      margin-left: 50px;
-   }
-   
-   .cart__item img {
-      width: 80px;
-      height: 80px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-right: 20px;
-   }
+      &-details {
+         display: flex;
+         flex-direction: column;
+         gap: 5px;
 
-  
+         p {
+            margin: 0;
+            font-size: 16px;
+            color: #555;
+         }
+
+         h4 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+         }
+      }
+   }
 }

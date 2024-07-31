@@ -1,0 +1,13 @@
+.header__lang-switcher {
+   display: flex;
+   gap: 17px;
+   position: relative;
+   z-index: 1000;
+   color: #000;
+   @media (max-width: 768px) {
+      gap: 7px;
+    }
+}
+.header__lang--active{
+font-weight: bold;
+}

@@ -1,11 +1,11 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
 import './index.scss';
-export const Button = ({ label }) => {
+export const Link = ({ text }) => {
   return (
-    <NavLink to="/Магазин">
+    <NavLink to="/shop">
       <button className="button">
-        {label}
+        {text}
       </button>
     </NavLink>
   );

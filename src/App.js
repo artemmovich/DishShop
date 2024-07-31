@@ -14,9 +14,9 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path="/Cart" element={<Cart />} />
-        <Route path="/Магазин" element={<Shop />} />
-        <Route path="/Головна" element={<Intro />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/shop" element={<Shop />} />
+        
         <Route path="/" element={<Intro />} />
       </Routes>
     </>

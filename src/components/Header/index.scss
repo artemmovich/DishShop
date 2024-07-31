@@ -1,42 +1,40 @@
 .header {
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 0px 20px 0px;
+  @media (max-width: 768px) {
+    padding: 5px 0px 10px 0px;
+  }
 
   &__top-part {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
-  }
-
-  &__lang-switcher {
-    display: flex;
-    align-items: center;
-    gap: 17px;
-    color: #000;
-
     @media (max-width: 768px) {
-      display: none;
+      padding: 0;
     }
   }
 
-  &__lang--active {
-    font-weight: bold;
-  }
+  
 
-  &__logo {
-    font-size: 24px;
-    font-weight: bold;
+
+
+  &__logo-link {
+    img {
+      @media (max-width: 768px) {
+        width: 50%;
+       margin-left: 20px;
+      }
+    }
   }
 
   &__nav {
-  
-
+    
     @media (max-width: 768px) {
-      
       display: flex;
       flex-direction: column;
       position: fixed;
+      color: #5a5c5e;
       top: 0;
       left: 0;
       width: 100%;
@@ -59,16 +57,15 @@
     align-items: center;
     justify-content: space-evenly;
     font-size: 24px;
-    
+
     list-style: none;
-   
 
     @media (max-width: 768px) {
       padding-top: 100px;
       flex-direction: column;
       align-items: center;
       justify-content: start;
-      
+
       height: 100%;
       width: 100%;
     }
@@ -79,19 +76,17 @@
 
   &__nav-link {
     margin: 0 15px;
-
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+    :hover{
+      font-weight: bold;
+    }
     @media (max-width: 768px) {
       margin: 20px 0;
     }
 
-    a {
-      text-decoration: none;
-      color: #333;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
+    
   }
 
   &__burger {
@@ -120,5 +115,23 @@
     z-index: 1000;
     display: flex;
     gap: 36px;
+    
+  }
+  &__icon--with-badge {
+    position: relative;
+
+    .header__badge {
+      position: absolute;
+      top: -7px;
+      right: -5px;
+      background-color: #f9e547;
+      color: black;
+      border-radius: 50%;
+      padding: 5px;
+      font-size: 12px;
+      font-weight: bold;
+      min-width: 20px;
+      text-align: center;
+    }
   }
 }
