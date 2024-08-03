@@ -43,17 +43,20 @@ const Cart = () => {
                         <h4>{item.title}</h4>
                         <p>{item.price}</p>
                      </div>
-                     <div className="cart__item-quantity">
-                        <button onClick={() => handleDecreaseQuantity(item.id)}>-</button>
-                        <span>{item.quantity}</span>
-                        <button onClick={() => handleIncreaseQuantity(item.id)}>+</button>
+                     <div className="cart__item-actions">
+                        <div className="cart__item-quantity">
+                           <button onClick={() => handleDecreaseQuantity(item.id)}>-</button>
+                           <span>{item.quantity}</span>
+                           <button onClick={() => handleIncreaseQuantity(item.id)}>+</button>
+                        </div>
+
+                        <button
+                           className="cart__item-remove"
+                           onClick={() => handleRemoveItem(item.id)}
+                        >
+                           {t('removeItem')}
+                        </button>
                      </div>
-                     <button
-                        className="cart__item-remove"
-                        onClick={() => handleRemoveItem(item.id)}
-                     >
-                        {t('removeItem')}
-                     </button>
                   </div>
                ))}
             </div>

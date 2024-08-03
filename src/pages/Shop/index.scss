@@ -1,24 +1,30 @@
 .shop {
    padding-top: 50px;
    padding-bottom: 50px;
+   @media (max-width: 770px) {
+      padding-top: 10px;
+      padding-bottom: 25px;
+   }
    &__wrapper {
       display: flex;
-      
       gap: 32px;
       flex-wrap: wrap;
       overflow: hidden;
       max-width: 1159px;
       margin: 0 auto;
       padding-left: 15px;
+      @media (max-width: 530px) {
+         gap: 20px;
+      }
 
       .shop-item {
-         flex: 1 0 calc(33.333% - 32px); 
+         flex: 1 0 calc(33.333% - 32px);
          max-width: calc(33.333% - 32px);
       }
 
       @media (max-width: 800px) {
          .shop-item {
-                        flex: 1 0 calc(50% - 32px); 
+            flex: 1 0 calc(50% - 32px);
             max-width: calc(50% - 32px);
          }
       }

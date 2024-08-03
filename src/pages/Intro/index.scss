@@ -14,6 +14,10 @@
       color: #f9e547;
       font-size: 48px;
       padding-bottom: 80px;
+      @media (max-width: 770px) {
+        font-size: 30px;
+        padding-bottom: 50px;
+      }
    }
    &__text {
       padding-top: 279px;

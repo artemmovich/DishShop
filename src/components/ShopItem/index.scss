@@ -1,14 +1,17 @@
+
+
 .shop-item {
-   
-   min-width: 0; /* Встановлює мінімальну ширину */
   
-   border: 1px solid #ddd; 
-   box-shadow: 
-   0 4px 8px rgba(0, 0, 0, 0.1), 
-   0 8px 16px rgba(0, 0, 0, 0.1), 
-   0 12px 24px rgba(0, 0, 0, 0.1);
+  
+   min-width: 0;
+
+   border: 1px solid #ddd;
+   box-shadow:
+      0 4px 8px rgba(0, 0, 0, 0.1),
+      0 8px 16px rgba(0, 0, 0, 0.1),
+      0 12px 24px rgba(0, 0, 0, 0.1);
    box-sizing: border-box;
-   &__description{
+   &__description {
       padding-left: 16px;
    }
    &__text {
@@ -22,23 +25,44 @@
       justify-content: space-between;
       align-items: center;
       padding-bottom: 27px;
+      @media (max-width: 770px) {
+         padding-bottom: 5px;
+      }
    }
    &__info {
       margin-top: 10px;
       font-size: 14px;
       color: #595959;
       padding-bottom: 15px;
+      @media (max-width: 770px) {
+         padding-bottom: 5px;
+         font-size: 12px;
+      }
+      @media (max-width: 530px) {
+         font-size: 10px;
+      }
    }
    &__title {
       font-size: 18px;
       margin-bottom: 26px;
+      @media (max-width: 770px) {
+         font-size: 12px;
+         margin-bottom: 11px;
+      }
+      @media (max-width: 530px) {
+         padding-right: 5px;      }
    }
    &__price {
       font-size: 30px;
       color: #06813f;
+      @media (max-width: 770px) {
+         font-size: 18px;
+      }
+      @media (max-width: 530px) {
+         font-size: 16px;
+      }
    }
-   &__cart {
-   }
+
    &__link {
       padding: 5px 10px;
       background-color: #fff;
@@ -46,6 +70,28 @@
          transition: all 0.3s ease;
          border-radius: 50%;
          background-color: yellow;
+      }
+   }
+   &__quantity-controls{
+      border: 1px solid;
+         border-radius: 4px;
+         display: flex;
+         align-items: center;
+         margin: 0 10px;
+         span{
+            margin: 0 10px;
+         }
+      
+      button {
+      
+         border: none;
+         border-radius: 4px;
+         padding: 5px 10px;
+         font-size: 16px;
+         cursor: pointer;
+         
+   
+        
       }
    }
 }
