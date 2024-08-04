@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/DishShop/static/css/main.5566c3e3.css",
+    "main.css": "/DishShop/static/css/main.173201f0.css",
     "main.js": "/DishShop/static/js/main.4cde03c5.js",
     "static/js/453.0f4552a2.chunk.js": "/DishShop/static/js/453.0f4552a2.chunk.js",
     "static/media/emptyCart.png": "/DishShop/static/media/emptyCart.7b0b7c45d0e6153a96d4.png",
@@ -13,12 +13,12 @@
     "static/media/cartItem.svg": "/DishShop/static/media/cartItem.cd54a38549415ce329be28ceead221a1.svg",
     "index.html": "/DishShop/index.html",
     "static/media/search.svg": "/DishShop/static/media/search.7d17d2042182f16be518533473e62264.svg",
-    "main.5566c3e3.css.map": "/DishShop/static/css/main.5566c3e3.css.map",
+    "main.173201f0.css.map": "/DishShop/static/css/main.173201f0.css.map",
     "main.4cde03c5.js.map": "/DishShop/static/js/main.4cde03c5.js.map",
     "453.0f4552a2.chunk.js.map": "/DishShop/static/js/453.0f4552a2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5566c3e3.css",
+    "static/css/main.173201f0.css",
     "static/js/main.4cde03c5.js"
   ]
 }
