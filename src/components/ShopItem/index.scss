@@ -12,7 +12,7 @@
       0 12px 24px rgba(0, 0, 0, 0.1);
    box-sizing: border-box;
    &__description {
-      padding-left: 16px;
+      padding: 0 10px;
    }
    &__text {
       display: flex;
@@ -24,9 +24,14 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      text-align: center;
       padding-bottom: 27px;
       @media (max-width: 770px) {
          padding-bottom: 5px;
+      }
+      @media (max-width: 530px) {
+         flex-direction: column;
+         gap: 10px;
       }
    }
    &__info {
@@ -78,6 +83,9 @@
          display: flex;
          align-items: center;
          margin: 0 10px;
+         @media (max-width: 530px) {
+            margin: 0;
+         }
          span{
             margin: 0 10px;
          }
