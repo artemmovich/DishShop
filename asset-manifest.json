@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/DishShop/static/css/main.173201f0.css",
-    "main.js": "/DishShop/static/js/main.b861e6c1.js",
+    "main.css": "/DishShop/static/css/main.78f60414.css",
+    "main.js": "/DishShop/static/js/main.066d570a.js",
     "static/js/453.0f4552a2.chunk.js": "/DishShop/static/js/453.0f4552a2.chunk.js",
+    "static/media/AboutUsImg.png": "/DishShop/static/media/AboutUsImg.21cf51e5e675c881efe6.png",
     "static/media/emptyCart.png": "/DishShop/static/media/emptyCart.7b0b7c45d0e6153a96d4.png",
     "static/media/bgImage.jpg": "/DishShop/static/media/bgImage.0592ddba82c60e5172a0.jpg",
+    "static/media/AboutUsImg2.jpg": "/DishShop/static/media/AboutUsImg2.40f1e16a5a801b22cf8a.jpg",
     "static/media/ShopPic1.png": "/DishShop/static/media/ShopPic1.d48bb973baefd7fcf440.png",
     "static/media/ShopPic3.png": "/DishShop/static/media/ShopPic3.64b4b04b34a69039d26b.png",
     "static/media/ShopPic2.png": "/DishShop/static/media/ShopPic2.7d5b82afc2f3bf1abb18.png",
@@ -13,12 +15,12 @@
     "static/media/cartItem.svg": "/DishShop/static/media/cartItem.cd54a38549415ce329be28ceead221a1.svg",
     "index.html": "/DishShop/index.html",
     "static/media/search.svg": "/DishShop/static/media/search.7d17d2042182f16be518533473e62264.svg",
-    "main.173201f0.css.map": "/DishShop/static/css/main.173201f0.css.map",
-    "main.b861e6c1.js.map": "/DishShop/static/js/main.b861e6c1.js.map",
+    "main.78f60414.css.map": "/DishShop/static/css/main.78f60414.css.map",
+    "main.066d570a.js.map": "/DishShop/static/js/main.066d570a.js.map",
     "453.0f4552a2.chunk.js.map": "/DishShop/static/js/453.0f4552a2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.173201f0.css",
-    "static/js/main.b861e6c1.js"
+    "static/css/main.78f60414.css",
+    "static/js/main.066d570a.js"
   ]
 }
